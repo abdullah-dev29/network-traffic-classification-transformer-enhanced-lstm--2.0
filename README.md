@@ -238,8 +238,8 @@ the recommended operating point:
 
 | Model                                 | Accuracy | F1  | Recall | Precision | AUC | Specificity |
 |----------------------------------------|----------|-----|--------|-----------|-----|-------------|
-| Transformer-Enhanced LSTM (thr=0.50)  | TBD      | TBD | TBD    | TBD       | TBD | TBD         |
-| Transformer-Enhanced LSTM (thr=best)  | TBD      | TBD | TBD    | TBD       | TBD | TBD         |
+| Transformer-Enhanced LSTM (thr=0.50)  | 0.9537      | 0.8720 | 0.8929    | 0.8519       | 0.9871 | 0.9667         |
+| Transformer-Enhanced LSTM (thr=best)  | 0.9504      | 0.8717 | 0.9541    | 0.8023       | 0.9871 | 0.9496         |
 
 With the matched setup (class weights off) plus tuned threshold, expect
 the transformer to win or tie on **F1** at a balanced precision/recall
@@ -252,7 +252,7 @@ matrix, not raw accuracy:
 
 | Model                      | Accuracy | Macro F1 | Weighted F1 | Macro Precision | Macro Recall | Macro AUC |
 |-----------------------------|----------|----------|-------------|------------------|--------------|-----------|
-| Transformer-Enhanced LSTM  | TBD      | TBD      | TBD         | TBD              | TBD          | TBD       |
+| Transformer-Enhanced LSTM  | 0.7703      | 0.6727      | 0.7720         | 0.6850              | 0.6906          | 0.9598       |
 
 Overall accuracy will look lower than the binary task (8 classes, ~10x
 imbalance) -- that's expected, not a regression. Expect small classes
@@ -265,8 +265,8 @@ matrix) is the deliverable, not a single inflated number.
 
 | Level | Accuracy | F1 / Macro F1 | Recall / Macro Recall | Precision / Macro Precision | AUC / Macro AUC | Specificity |
 |---|---|---|---|---|---|---|
-| Level 1 (binary, grouped) | TBD | TBD | TBD | TBD | TBD | TBD |
-| Level 2 (4-class)         | TBD | TBD | TBD | TBD | TBD | -- |
+| Level 1 (binary, grouped) | 0.9448 | 0.8588 | 0.9507 | 0.7830 | 0.9833 | 0.9436 |
+| Level 2 (4-class)         | 0.9345 | 0.8078 | 0.9364 | 0.7824 | 0.8922 | 0.9898 |
 
 Level 1 should land close to the dedicated `binary` task's numbers -- it's
 the same coarse decision, just routed through a 4-class model; small
@@ -280,7 +280,10 @@ Tor visibly the hardest, is the deliverable.
 
 ## Team members
 
-- TBD
+- Muhammad Borhan UD Din - 63206
+- Muhammad Mutahar - 63513
+- Abdullah - 62724
+- Ameer Hamza - 65260
 
 ## Academic integrity
 
