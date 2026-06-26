@@ -1,0 +1,23 @@
+Level 1 -- Binary (Darknet vs Benign), grouped from the 4-class prediction
+Model                                       Accuracy        F1    Recall Precision       AUC Specificity
+Transformer-Enhanced LSTM (Level 1: binary, grouped)    0.9448    0.8588    0.9507    0.7830    0.9833      0.9436
+
+Level 2 -- 4-class (Tor, VPN, Non-Tor, NonVPN)
+
+Accuracy:        0.9345
+Macro F1:        0.8078
+Weighted F1:     0.9364
+Macro Precision: 0.7824
+Macro Recall:    0.8922
+Macro AUC (OvR): 0.9898
+
+              precision    recall  f1-score   support
+
+     Non-Tor       0.99      0.99      0.99     12871
+      NonVPN       0.93      0.74      0.83      3604
+         Tor       0.39      0.91      0.55       234
+         VPN       0.81      0.92      0.86      3296
+
+    accuracy                           0.93     20005
+   macro avg       0.78      0.89      0.81     20005
+weighted avg       0.95      0.93      0.94     20005

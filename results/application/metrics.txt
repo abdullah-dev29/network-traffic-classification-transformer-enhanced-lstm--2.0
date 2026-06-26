@@ -1,0 +1,23 @@
+Transformer-Enhanced LSTM -- application-type classification (8 classes)
+
+Accuracy:        0.7703
+Macro F1:        0.6727
+Weighted F1:     0.7720
+Macro Precision: 0.6850
+Macro Recall:    0.6906
+Macro AUC (OvR): 0.9598
+
+                 precision    recall  f1-score   support
+
+Audio-Streaming       0.82      0.69      0.75      2251
+       Browsing       0.86      0.87      0.86      5972
+           Chat       0.81      0.45      0.57      1900
+          Email       0.47      0.81      0.59      1062
+  File-Transfer       0.70      0.63      0.66      2094
+            P2P       0.94      0.95      0.94      4649
+           VOIP       0.39      0.52      0.45       386
+Video-Streaming       0.49      0.62      0.55      1691
+
+       accuracy                           0.77     20005
+      macro avg       0.69      0.69      0.67     20005
+   weighted avg       0.79      0.77      0.77     20005
